@@ -561,7 +561,7 @@ input:not(:placeholder-shown) ~ .reset {
 
 .featured-video {
   width: 380px;
-  height: 600px;
+  height: 400px;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -633,4 +633,160 @@ input:not(:placeholder-shown) ~ .reset {
   margin-top: 1rem;
   margin-left: 1.5rem;
   color: grey;
+}
+
+.horoscope-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.horoscope {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  height: 265px;
+}
+.horoscope img {
+  width: 50px;
+  height: 50px;
+  margin: 1rem 0 1rem 0;
+}
+.horoscope-title {
+  color: grey;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+.sign {
+  color: rgb(68, 85, 139);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.horoscope-description {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 1rem;
+}
+.bolsa-mega {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.bolsa {
+  color: grey;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.bolsa h1 {
+  margin-top: 1rem;
+}
+.bolsa div {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  font-size: 12px;
+  font-weight: bold;
+}
+.bolsa-valor {
+  color: #2f2ee9;
+}
+.bolsa-valor-neg {
+  color: darkred;
+}
+
+.mega-sena img {
+  width: 40px;
+  height: 40px;
+  margin-top: 1rem;
+}
+
+.mega-sena div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mega-sena {
+  color: grey;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.mega-sena h1 {
+  color: grey;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.mega-sena span {
+  color: green;
+  padding: 0.5rem;
+  border: 1px solid green;
+  border-radius: 100%;
+}
+
+.last-container {
+  margin-top: 2rem;
+}
+
+.last-container-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-side-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: #fff;
+  margin-right: 3.2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+.left-side-content {
+  width: 40%;
+}
+#last-left-topic {
+  margin-top: 0;
+}
+
+.footer {
+  margin-top: 100px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: grey;
+  height: 130px;
+}
+.footer a {
+  color: white;
 }
