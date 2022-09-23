@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Mundiware - teste</title>
+    <title>Mundiware2</title>
   </head>
   <body>
-    <div class="body-content">
-      <div class="navbar">
+    <div class="body-wrapper">
+      <header class="header">
         <div class="menu">
-          <img src="./images/menu_icon.svg" alt="menu icon" />
+          <img class="icon" src="./images/menu_icon.svg" alt="menu icon" />
           <p>menu</p>
         </div>
 
@@ -58,14 +58,10 @@
           </button>
         </form>
 
-        <img src="./images/circle.svg" alt="logo" class="logo" />
+        <h1><img src="./images/circle.svg" alt="logo" class="logo" /></h1>
 
         <div class="clima">
-          <img
-            src="./images/weather.svg"
-            alt="icon clima"
-            class="weather-icon"
-          />
+          <img src="./images/weather.svg" alt="icon clima" class="icon" />
           <div class="weather-location">
             <span>Rio de Janeiro</span>
             <div class="min-max-weather">
@@ -75,128 +71,136 @@
           </div>
         </div>
 
-        <img
-          src="./images/notification.svg"
-          alt="notifications"
-          class="notification-icon"
-        />
+        <img src="./images/notification.svg" alt="notifications" class="icon" />
 
         <div class="user">
-          <img
-            src="./images/down_arrow.svg"
-            alt="user info"
-            class="down-arrow"
-          />
+          <img src="./images/down_arrow.svg" alt="user info" class="icon" />
           <img
             src="./images/user_avatar.svg"
             alt="user avatar"
             class="user-avatar"
           />
         </div>
-      </div>
+      </header>
 
-      <div class="divider"></div>
+      <hr class="divider" />
 
-      <div class="categories">
-        <a href="#">notícias</a>
-        <a href="#">esportes</a>
-        <a href="#">entretenimento</a>
-        <a href="#">carros</a>
-        <a href="#">tv e famosos</a>
-        <a href="#">planeta</a>
-        <a href="#">economia</a>
-        <a href="#">saúde</a>
-      </div>
+      <nav>
+        <ul class="categories">
+          <li><a href="#">notícias</a></li>
+          <li><a href="#">esportes</a></li>
+          <li><a href="#">entretenimento</a></li>
+          <li><a href="#">carros</a></li>
+          <li><a href="#">tv e famosos</a></li>
+          <li><a href="#">planeta</a></li>
+          <li><a href="#">economia</a></li>
+          <li><a href="#">saúde</a></li>
+        </ul>
+      </nav>
 
-      <div class="first-categgory-container">
-        <div class="first-category-title">
-          <p>covid-19</p>
-          <div class="divider"></div>
-        </div>
-        <div class="first-category-content">
-          <div class="first-category-main-topic">
-            <img src="./images/tie-1.jpg" alt="random image" />
-          </div>
-          <div class="first-category-other-topics">
-            <div class="first-category-topic-1">
-              <img src="./images/tie-2.jpg" alt="random image" />
-              <p>esportes</p>
-              <h1 class="topic-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati.
-              </h1>
-            </div>
-            <div class="first-category-topic-2">
-              <img src="./images/tie-2.jpg" alt="random image" />
-              <p>economia</p>
-              <h1 class="topic-title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Cupiditate?
-              </h1>
-            </div>
-          </div>
+      <div class="subtitle-divider">
+        <h2>covid-19</h2>
+        <div>
+          <hr class="divider" />
         </div>
       </div>
 
-      <div class="divider"></div>
+      <main>
+        <section class="first-section">
+          <img src="./images/tie-1.jpg" alt="random image" />
 
-      <div class="other-categories-container">
-        <div class="other-categories-content">
-          <div class="right-content">
-            <div class="main-topics">
-              <div class="topic" id="first">
-                <img src="./images/tie-3.jpg" alt="random image" />
-                <div class="topic-content">
-                  <p>entretenimento</p>
-                  <h1 class="topic-title">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolor!
-                  </h1>
-                  <span>5 min. de leitura - há 15 horas </span>
-                </div>
-              </div>
+          <div class="horizontal-card">
+            <img src="./images/tie-2.jpg" alt="random image" />
+            <p class="sports">esportes</p>
+            <p class="news-title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate officiis voluptates sequi?
+            </p>
+          </div>
+          <div class="horizontal-card">
+            <img src="./images/tie-2.jpg" alt="random image" />
+            <p class="economy">economia</p>
+            <p class="news-title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate officiis voluptates sequi?
+            </p>
+          </div>
+        </section>
+
+        <hr class="divider" />
+
+        <section class="second-section">
+          <section class="main-second-section">
+            <div class="topic-wrapper">
               <div class="topic">
                 <img src="./images/tie-3.jpg" alt="random image" />
                 <div class="topic-content">
-                  <p>entretenimento</p>
-                  <h1 class="topic-title">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolor!
-                  </h1>
-                  <span>5 min. de leitura - há 15 horas </span>
+                  <p class="entertainment">entretenimento</p>
+                  <p class="topic-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum expedita rerum velit temporibus?
+                  </p>
+                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
                 </div>
               </div>
+
               <div class="topic">
                 <img src="./images/tie-3.jpg" alt="random image" />
                 <div class="topic-content">
-                  <p>entretenimento</p>
-                  <h1 class="topic-title">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolor!
-                  </h1>
-                  <span>5 min. de leitura - há 15 horas </span>
+                  <p class="entertainment">entretenimento</p>
+                  <p class="topic-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum expedita rerum velit temporibus?
+                  </p>
+                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
                 </div>
               </div>
+
               <div class="topic">
                 <img src="./images/tie-3.jpg" alt="random image" />
                 <div class="topic-content">
-                  <p>entretenimento</p>
-                  <h1 class="topic-title">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolor!
-                  </h1>
-                  <span>5 min. de leitura - há 15 horas </span>
+                  <p class="entertainment">entretenimento</p>
+                  <p class="topic-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum expedita rerum velit temporibus?
+                  </p>
+                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
                 </div>
               </div>
-              <div class="topic" id="last">
+
+              <div class="topic">
                 <img src="./images/tie-3.jpg" alt="random image" />
                 <div class="topic-content">
-                  <p>entretenimento</p>
-                  <h1 class="topic-title">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dolor!
-                  </h1>
-                  <span>5 min. de leitura - há 15 horas </span>
+                  <p class="entertainment">entretenimento</p>
+                  <p class="topic-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum expedita rerum velit temporibus?
+                  </p>
+                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
+                </div>
+              </div>
+
+              <div class="topic">
+                <img src="./images/tie-3.jpg" alt="random image" />
+                <div class="topic-content">
+                  <p class="entertainment">entretenimento</p>
+                  <p class="topic-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum expedita rerum velit temporibus?
+                  </p>
+                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
+                </div>
+              </div>
+
+              <div class="topic">
+                <img src="./images/tie-3.jpg" alt="random image" />
+                <div class="topic-content">
+                  <p class="entertainment">entretenimento</p>
+                  <p class="topic-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum expedita rerum velit temporibus?
+                  </p>
+                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
                 </div>
               </div>
             </div>
@@ -215,380 +219,366 @@
                 </div>
               </div>
             </div>
+          </section>
+
+          <aside>
+            <section class="side-topics">
+              <div class="music-topic-wrapper">
+                <div class="music-topic">
+                  <div class="music-topic-text">
+                    <p class="music">música</p>
+                    <p class="music-topic-title">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Veniam libero doloribus expedita.
+                    </p>
+                  </div>
+                  <img src="./images/tie-4.jpg" alt="random image" />
+                </div>
+                <div class="music-topic">
+                  <div class="music-topic-text">
+                    <p class="music">música</p>
+                    <p class="music-topic-title">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Veniam libero doloribus expedita.
+                    </p>
+                  </div>
+                  <img src="./images/tie-4.jpg" alt="random image" />
+                </div>
+              </div>
+
+              <div class="other-topics-wrapper">
+                <div class="big-topic">
+                  <div class="big-topic-text">
+                    <p class="music">música</p>
+                    <p class="music-topic-title">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Veniam libero doloribus expedita.
+                    </p>
+                    <p class="music-subtitle">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Maxime dolores ipsum at?
+                    </p>
+                    <p class="music-reading-time">
+                      5 min. de leitura - há 15 horas
+                    </p>
+                  </div>
+                  <img src="./images/tie-1.jpg" alt="random image" />
+                </div>
+
+                <div class="small-topic">
+                  <div class="small-topic-text">
+                    <p class="sports">esportes</p>
+                    <p class="news-title">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tempora et dolores quisquam?
+                    </p>
+                  </div>
+                  <img src="./images/tie-2.jpg" alt="random image" />
+                </div>
+                <div class="small-topic">
+                  <div class="small-topic-text">
+                    <p class="sports">esportes</p>
+                    <p class="news-title">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tempora et dolores quisquam?
+                    </p>
+                  </div>
+                  <img src="./images/tie-2.jpg" alt="random image" />
+                </div>
+                <div class="small-topic">
+                  <div class="small-topic-text">
+                    <p class="sports">esportes</p>
+                    <p class="news-title">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tempora et dolores quisquam?
+                    </p>
+                  </div>
+                  <img src="./images/tie-2.jpg" alt="random image" />
+                </div>
+                <div class="small-topic">
+                  <div class="small-topic-text">
+                    <p class="sports">esportes</p>
+                    <p class="news-title">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tempora et dolores quisquam?
+                    </p>
+                  </div>
+                  <img src="./images/tie-2.jpg" alt="random image" />
+                </div>
+                <div class="small-topic">
+                  <div class="small-topic-text">
+                    <p class="sports">esportes</p>
+                    <p class="news-title">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tempora et dolores quisquam?
+                    </p>
+                  </div>
+                  <img src="./images/tie-2.jpg" alt="random image" />
+                </div>
+              </div>
+            </section>
+          </aside>
+        </section>
+
+        <div class="subtitle-divider">
+          <h2>vídeos em destaque</h2>
+          <div>
+            <hr class="divider" />
           </div>
+        </div>
 
-          <div class="left-content">
-            <div class="left-content-wrapper">
-              <div class="left-first-content">
-                <p>musica</p>
-                <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ipsam.
-                </h1>
-                <span></span>
-              </div>
-              <div class="left-second-content">
-                <p>musica</p>
-                <h1>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Error?
-                </h1>
-              </div>
+        <section class="featured-video-container">
+          <div class="featured-video">
+            <span class="video-length">3 min</span>
+            <div class="video-preview">
+              <img
+                src="./images/tie-1.jpg"
+                alt="random image"
+                id="img-video-preview"
+              />
             </div>
-
-            <div class="left-main-content">
-              <p>esporte</p>
+            <div class="video-player">
+              <img
+                src="./images/play_icon.svg"
+                alt="play video"
+                id="icon-player"
+              />
+            </div>
+            <div class="video-description">
+              <p>entretenimento</p>
               <h1>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate.
+                Quibusdam?
               </h1>
-              <span
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                suscipit? Pariatur, quas?</span
-              >
-              <span>5 min. de leitura - há 15 horas </span>
             </div>
+          </div>
+          <div class="featured-video">
+            <span class="video-length">3 min</span>
+            <div class="video-preview">
+              <img
+                src="./images/tie-1.jpg"
+                alt="random image"
+                id="img-video-preview"
+              />
+            </div>
+            <div class="video-player">
+              <img
+                src="./images/play_icon.svg"
+                alt="play video"
+                id="icon-player"
+              />
+            </div>
+            <div class="video-description">
+              <p>entretenimento</p>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam?
+              </h1>
+            </div>
+          </div>
+          <div class="featured-video">
+            <span class="video-length-sports">3 min</span>
+            <div class="video-preview">
+              <img
+                src="./images/tie-1.jpg"
+                alt="random image"
+                id="img-video-preview"
+              />
+            </div>
+            <div class="video-player-sports">
+              <img
+                src="./images/play_icon.svg"
+                alt="play video"
+                id="icon-player"
+              />
+            </div>
+            <div class="video-description">
+              <p class="sports">esportes</p>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam?
+              </h1>
+            </div>
+          </div>
+          <div class="featured-video">
+            <span class="video-length">3 min</span>
+            <div class="video-preview">
+              <img
+                src="./images/tie-1.jpg"
+                alt="random image"
+                id="img-video-preview"
+              />
+            </div>
+            <div class="video-player">
+              <img
+                src="./images/play_icon.svg"
+                alt="play video"
+                id="icon-player"
+              />
+            </div>
+            <div class="video-description">
+              <p>entretenimento</p>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam?
+              </h1>
+            </div>
+          </div>
+        </section>
 
-            <div class="left-other-topics">
-              <div class="left-topic">
-                <div class="left-topic-content">
-                  <p>esporte</p>
-                  <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos.
-                  </h1>
-                </div>
-                <img src="./images/tie-1.jpg" alt="random image" />
+        <section class="horoscope-section">
+          <div class="last-topic">
+            <div class="last-topic-wrapper">
+              <div class="last-topic-content">
+                <p>tv e famosos</p>
+                <h1>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tempore modi!
+                </h1>
               </div>
-            </div>
-            <div class="left-other-topics">
-              <div class="left-topic">
-                <div class="left-topic-content">
-                  <p>esporte</p>
-                  <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos.
-                  </h1>
-                </div>
-                <img src="./images/tie-1.jpg" alt="random image" />
-              </div>
-            </div>
-            <div class="left-other-topics">
-              <div class="left-topic">
-                <div class="left-topic-content">
-                  <p>esporte</p>
-                  <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos.
-                  </h1>
-                </div>
-                <img src="./images/tie-1.jpg" alt="random image" />
-              </div>
-            </div>
-            <div class="left-other-topics">
-              <div class="left-topic">
-                <div class="left-topic-content">
-                  <p>esporte</p>
-                  <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos.
-                  </h1>
-                </div>
-                <img src="./images/tie-1.jpg" alt="random image" />
-              </div>
-            </div>
-            <div class="left-other-topics">
-              <div class="left-topic">
-                <div class="left-topic-content">
-                  <p>esporte</p>
-                  <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos.
-                  </h1>
-                </div>
-                <img src="./images/tie-1.jpg" alt="random image" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="first-category-title">
-        <p>Videos em destaque</p>
-        <div class="divider"></div>
-      </div>
-
-      <div class="featured-video-container">
-        <div class="featured-video">
-          <span class="video-length">3 min</span>
-          <div class="video-preview">
-            <img
-              src="./images/tie-1.jpg"
-              alt="random image"
-              id="img-video-preview"
-            />
-          </div>
-          <div class="video-player">
-            <img
-              src="./images/play_icon.svg"
-              alt="play video"
-              id="icon-player"
-            />
-          </div>
-          <div class="video-description">
-            <p>entretenimento</p>
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam?
-            </h1>
-          </div>
-        </div>
-
-        <div class="featured-video">
-          <span class="video-length">3 min</span>
-          <div class="video-preview">
-            <img
-              src="./images/tie-1.jpg"
-              alt="random image"
-              id="img-video-preview"
-            />
-          </div>
-          <div class="video-player">
-            <img
-              src="./images/play_icon.svg"
-              alt="play video"
-              id="icon-player"
-            />
-          </div>
-          <div class="video-description">
-            <p>entretenimento</p>
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam?
-            </h1>
-          </div>
-        </div>
-
-        <div class="featured-video">
-          <span class="video-length">3 min</span>
-          <div class="video-preview">
-            <img
-              src="./images/tie-1.jpg"
-              alt="random image"
-              id="img-video-preview"
-            />
-          </div>
-          <div class="video-player">
-            <img
-              src="./images/play_icon.svg"
-              alt="play video"
-              id="icon-player"
-            />
-          </div>
-          <div class="video-description">
-            <p>entretenimento</p>
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam?
-            </h1>
-          </div>
-        </div>
-
-        <div class="featured-video">
-          <span class="video-length">3 min</span>
-          <div class="video-preview">
-            <img
-              src="./images/tie-1.jpg"
-              alt="random image"
-              id="img-video-preview"
-            />
-          </div>
-          <div class="video-player">
-            <img
-              src="./images/play_icon.svg"
-              alt="play video"
-              id="icon-player"
-            />
-          </div>
-          <div class="video-description">
-            <p>entretenimento</p>
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam?
-            </h1>
-          </div>
-        </div>
-      </div>
-
-      <div class="other-categories-container">
-        <div class="other-categories-content">
-          <div class="right-content">
-            <div class="last-topic">
-              <div class="last-topic-wrapper">
-                <div class="last-topic-content">
-                  <p>tv e famosos</p>
-                  <h1>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Tempore modi!
-                  </h1>
-                </div>
-                <div class="last-topic-navigation">
-                  <img src="./images/line.svg" alt="line navigation" />
-                  <img src="./images/line.svg" alt="line navigation" />
-                </div>
+              <div class="last-topic-navigation">
+                <img src="./images/line.svg" alt="line navigation" />
+                <img src="./images/line.svg" alt="line navigation" />
               </div>
             </div>
           </div>
 
-          <div class="horoscope-container">
-            <div class="horoscope">
+          <aside>
+            <section class="horoscope">
               <p class="horoscope-title">horóscopo do dia</p>
               <img
                 src="./images/horoscope-icon.svg"
                 alt="horoscope image"
                 class="horoscope-img"
               />
-              <span class="sign">gemeos</span>
+              <p class="sign">gemeos</p>
               <p class="horoscope-description">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Consectetur ab dignissimos similique odio? Vero commodi ad
                 adipisci rem tenetur consequatur?
               </p>
-            </div>
-            <div class="bolsa-mega">
+            </section>
+            <section class="bolsa-mega">
               <div class="bolsa">
                 <h1>bolsa</h1>
-
-              <div>
-
-                <span>dólar comercial <span class="bolsa-valor">R$5,53</span></span>
-                <span>dólar turismo <span  class="bolsa-valor">R$5,53</span></span>
-                <span>euro <span class="bolsa-valor">R$5,53</span></span>
-                <span>ibovespa <span class="bolsa-valor-neg">-4,87%</span>
-              </div>
-
-
+                <div>
+                  <p>dólar comercial <span class="bolsa-valor">R$5,53</span></p>
+                  <p>dólar turismo <span class="bolsa-valor">R$5,53</span></p>
+                  <p>euro <span class="bolsa-valor">R$5,53</span></p>
+                  <p>ibovespa <span class="bolsa-valor-neg">-4,87%</span></p>
+                </div>
               </div>
               <div class="mega-sena">
                 <h1>mega sena n 1011</h1>
-                <img src="./images/clover.svg" alt="mega-sena-icon">
+                <img src="./images/clover.svg" alt="mega-sena-icon" />
                 <div>
-                  <span>01</span>
-                  <span>05</span>
-                  <span>12</span>
+                  <p>01</p>
+                  <p>05</p>
+                  <p>12</p>
                 </div>
                 <div>
-                  <span>23</span>
-                  <span>32</span>
-                  <span>44</span>
+                  <p>23</p>
+                  <p>32</p>
+                  <p>44</p>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </section>
 
+        <section class="last-section">
+          <div class="main-second-section">
+            <div class="topic-wrapper">
+              <div class="topic">
+                <img src="./images/tie-3.jpg" alt="random image" />
+                <div class="topic-content">
+                  <p class="entertainment">entretenimento</p>
+                  <p class="topic-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum expedita rerum velit temporibus?
+                  </p>
+                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
+                </div>
+              </div>
+              <div class="topic">
+                <img src="./images/tie-3.jpg" alt="random image" />
+                <div class="topic-content">
+                  <p class="entertainment">entretenimento</p>
+                  <p class="topic-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum expedita rerum velit temporibus?
+                  </p>
+                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
+                </div>
+              </div>
+              <div class="topic">
+                <img src="./images/tie-3.jpg" alt="random image" />
+                <div class="topic-content">
+                  <p class="entertainment">entretenimento</p>
+                  <p class="topic-title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum expedita rerum velit temporibus?
+                  </p>
+                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="last-container">
-        <div class="last-container-content">
-          <div class="right-side-content">
-
-            <div class="topic">
-              <img src="./images/tie-3.jpg" alt="random image" />
-              <div class="topic-content">
-                <p>entretenimento</p>
-                <h1 class="topic-title">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dolor!
-                </h1>
-                <span>5 min. de leitura - há 15 horas </span>
-              </div>
-            </div>
-            <div class="topic">
-              <img src="./images/tie-3.jpg" alt="random image" />
-              <div class="topic-content">
-                <p>entretenimento</p>
-                <h1 class="topic-title">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dolor!
-                </h1>
-                <span>5 min. de leitura - há 15 horas </span>
-              </div>
-            </div>
-            <div class="topic">
-              <img src="./images/tie-3.jpg" alt="random image" />
-              <div class="topic-content">
-                <p>entretenimento</p>
-                <h1 class="topic-title">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dolor!
-                </h1>
-                <span>5 min. de leitura - há 15 horas </span>
-              </div>
-            </div>
-          </div>
-          <div class="left-side-content">
-            <div class="left-other-topics" id="last-left-topic">
-              <div class="left-topic">
-                <div class="left-topic-content">
-                  <p>esporte</p>
-                  <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos.
-                  </h1>
+          <aside>
+            <section class="other-topics-wrapper">
+              <div class="small-topic">
+                <div class="small-topic-text">
+                  <p class="sports">esportes</p>
+                  <p class="news-title">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Tempora et dolores quisquam?
+                  </p>
                 </div>
-                <img src="./images/tie-1.jpg" alt="random image" />
+                <img src="./images/tie-2.jpg" alt="random image" />
               </div>
-            </div>
-            <div class="left-other-topics" id="last-left-topic">
-              <div class="left-topic">
-                <div class="left-topic-content">
-                  <p>esporte</p>
-                  <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos.
-                  </h1>
+              <div class="small-topic">
+                <div class="small-topic-text">
+                  <p class="sports">esportes</p>
+                  <p class="news-title">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Tempora et dolores quisquam?
+                  </p>
                 </div>
-                <img src="./images/tie-1.jpg" alt="random image" />
+                <img src="./images/tie-2.jpg" alt="random image" />
               </div>
-            </div>
-            <div class="left-other-topics">
-              <div class="left-topic">
-                <div class="left-topic-content">
-                  <p>esporte</p>
-                  <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos.
-                  </h1>
+              <div class="small-topic">
+                <div class="small-topic-text">
+                  <p class="sports">esportes</p>
+                  <p class="news-title">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Tempora et dolores quisquam?
+                  </p>
                 </div>
-                <img src="./images/tie-1.jpg" alt="random image" />
+                <img src="./images/tie-2.jpg" alt="random image" />
               </div>
-            </div>
-            <div class="left-other-topics">
-              <div class="left-topic">
-                <div class="left-topic-content">
-                  <p>esporte</p>
-                  <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos.
-                  </h1>
+              <div class="small-topic">
+                <div class="small-topic-text">
+                  <p class="sports">esportes</p>
+                  <p class="news-title">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Tempora et dolores quisquam?
+                  </p>
                 </div>
-                <img src="./images/tie-1.jpg" alt="random image" />
+                <img src="./images/tie-2.jpg" alt="random image" />
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
+            </section>
+          </aside>
+        </section>
+      </main>
     </div>
+    <footer>
+      <section class="footer">
+        <span> © Copyright 2020-2021 - Todos os direitos reservados S.A</span>
+        <img src="./images/circle.svg" class="logo" alt="logo icon" />
+        <a href="#">Política de privacidade</a>
+        <a href="#">Imprensa</a>
+      </section>
+    </footer>
   </body>
-  <footer>
-    <div class="footer">
-      <span> © Copyright 2020-2021 - Todos os direitos reservados S.A</span>
-      <img src="./images/circle.svg" class="logo" alt="logo icon">
-      <a href="#">Política de privacidade</a>
-      <a href="#">Imprensa</a>
-    </div>
-  </footer>
 </html>
