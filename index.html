@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Mundiware</title>
   </head>
   <body>
@@ -14,7 +18,7 @@
           <figure>
             <img class="icon" src="./images/menu_icon.svg" alt="menu icon" />
           </figure>
-          <p>menu</p>
+          <span>menu</span>
         </div>
 
         <form class="form">
@@ -79,7 +83,7 @@
           </div>
         </div>
 
-        <figure>
+        <figure class="notification-icon">
           <img
             src="./images/notification.svg"
             alt="notifications"
@@ -101,7 +105,7 @@
         </div>
       </header>
 
-      <hr class="divider" />
+      <hr class="divider" id="divider-header" />
 
       <nav>
         <ul class="categories">
@@ -114,6 +118,26 @@
           <li><a href="#">economia</a></li>
           <li><a href="#">saúde</a></li>
         </ul>
+
+        <div class="hamburger-wrapper">
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">notícias</a></li>
+              <li><a class="menu__item" href="#">esportes</a></li>
+              <li><a class="menu__item" href="#">entretenimento</a></li>
+              <li><a class="menu__item" href="#">carros</a></li>
+              <li><a class="menu__item" href="#">tv e famosos</a></li>
+              <li><a class="menu__item" href="#">planeta</a></li>
+              <li><a class="menu__item" href="#">economia</a></li>
+              <li><a class="menu__item" href="#">saúde</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
       <div class="subtitle-divider">
@@ -126,14 +150,18 @@
       <main>
         <section class="first-section">
           <figure>
-            <img src="./images/tie-1.jpg" alt="random image" />
+            <img
+              src="./images/tie-1.jpg"
+              alt="random image"
+              class="first-section-image"
+            />
           </figure>
 
           <div class="horizontal-card">
             <figure>
               <img src="./images/tie-2.jpg" alt="random image" />
             </figure>
-            <p class="sports">esportes</p>
+            <h3 class="sports">esportes</h3>
             <p class="news-title">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate officiis voluptates sequi?
@@ -143,7 +171,7 @@
             <figure>
               <img src="./images/tie-2.jpg" alt="random image" />
             </figure>
-            <p class="economy">economia</p>
+            <h3 class="economy">economia</h3>
             <p class="news-title">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate officiis voluptates sequi?
@@ -266,7 +294,7 @@
               <div class="music-topic-wrapper">
                 <div class="music-topic">
                   <div class="music-topic-text">
-                    <p class="music">música</p>
+                    <h3 class="music">música</h3>
                     <p class="music-topic-title">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Veniam libero doloribus expedita.
@@ -278,7 +306,7 @@
                 </div>
                 <div class="music-topic">
                   <div class="music-topic-text">
-                    <p class="music">música</p>
+                    <h3 class="music">música</h3>
                     <p class="music-topic-title">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Veniam libero doloribus expedita.
@@ -293,18 +321,18 @@
               <div class="other-topics-wrapper">
                 <div class="big-topic">
                   <div class="big-topic-text">
-                    <p class="music">música</p>
+                    <h3 class="music">música</h3>
                     <p class="music-topic-title">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Veniam libero doloribus expedita.
                     </p>
-                    <p class="music-subtitle">
+                    <span class="music-subtitle">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Maxime dolores ipsum at?
-                    </p>
-                    <p class="music-reading-time">
+                    </span>
+                    <span class="music-reading-time">
                       5 min. de leitura - há 15 horas
-                    </p>
+                    </span>
                   </div>
                   <figure>
                     <img src="./images/tie-1.jpg" alt="random image" />
@@ -313,7 +341,7 @@
 
                 <div class="small-topic">
                   <div class="small-topic-text">
-                    <p class="sports">esportes</p>
+                    <h3 class="sports">esportes</h3>
                     <p class="news-title">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Tempora et dolores quisquam?
@@ -325,7 +353,7 @@
                 </div>
                 <div class="small-topic">
                   <div class="small-topic-text">
-                    <p class="sports">esportes</p>
+                    <h3 class="sports">esportes</h3>
                     <p class="news-title">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Tempora et dolores quisquam?
@@ -337,7 +365,7 @@
                 </div>
                 <div class="small-topic">
                   <div class="small-topic-text">
-                    <p class="sports">esportes</p>
+                    <h3 class="sports">esportes</h3>
                     <p class="news-title">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Tempora et dolores quisquam?
@@ -349,7 +377,7 @@
                 </div>
                 <div class="small-topic">
                   <div class="small-topic-text">
-                    <p class="sports">esportes</p>
+                    <h3 class="sports">esportes</h3>
                     <p class="news-title">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Tempora et dolores quisquam?
@@ -361,7 +389,7 @@
                 </div>
                 <div class="small-topic">
                   <div class="small-topic-text">
-                    <p class="sports">esportes</p>
+                    <h3 class="sports">esportes</h3>
                     <p class="news-title">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Tempora et dolores quisquam?
@@ -405,11 +433,11 @@
               </figure>
             </div>
             <div class="video-description">
-              <p>entretenimento</p>
-              <h1>
+              <h3>entretenimento</h3>
+              <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quibusdam?
-              </h1>
+              </span>
             </div>
           </div>
           <div class="featured-video">
@@ -424,48 +452,48 @@
               </figure>
             </div>
             <div class="video-player">
-              <picture>
+              <figure>
                 <img
                   src="./images/play_icon.svg"
                   alt="play video"
                   id="icon-player"
                 />
-              </picture>
+              </figure>
             </div>
             <div class="video-description">
-              <p>entretenimento</p>
-              <h1>
+              <h3>entretenimento</h3>
+              <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quibusdam?
-              </h1>
+              </span>
             </div>
           </div>
           <div class="featured-video">
             <span class="video-length-sports">3 min</span>
             <div class="video-preview">
-              <picture>
+              <figure>
                 <img
                   src="./images/tie-1.jpg"
                   alt="random image"
                   id="img-video-preview"
                 />
-              </picture>
+              </figure>
             </div>
             <div class="video-player-sports">
-              <picture>
+              <figure>
                 <img
                   src="./images/play_icon.svg"
                   alt="play video"
                   id="icon-player"
                 />
-              </picture>
+              </figure>
             </div>
             <div class="video-description">
-              <p class="sports">esportes</p>
-              <h1>
+              <h3 class="sports">esportes</h3>
+              <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quibusdam?
-              </h1>
+              </span>
             </div>
           </div>
           <div class="featured-video">
@@ -489,11 +517,11 @@
               </figure>
             </div>
             <div class="video-description">
-              <p>entretenimento</p>
-              <h1>
+              <h3>entretenimento</h3>
+              <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quibusdam?
-              </h1>
+              </span>
             </div>
           </div>
         </section>
@@ -502,34 +530,34 @@
           <div class="last-topic">
             <div class="last-topic-wrapper">
               <div class="last-topic-content">
-                <p>tv e famosos</p>
-                <h1>
+                <h3>tv e famosos</h3>
+                <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Tempore modi!
-                </h1>
+                </p>
               </div>
               <div class="last-topic-navigation">
-                <picture>
+                <figure>
                   <img src="./images/line.svg" alt="line navigation" />
-                </picture>
-                <picture>
+                </figure>
+                <figure>
                   <img src="./images/line.svg" alt="line navigation" />
-                </picture>
+                </figure>
               </div>
             </div>
           </div>
 
           <aside>
             <section class="horoscope">
-              <p class="horoscope-title">horóscopo do dia</p>
-              <picture>
+              <h2 class="horoscope-title">horóscopo do dia</h2>
+              <figure>
                 <img
                   src="./images/horoscope-icon.svg"
                   alt="horoscope image"
                   class="horoscope-img"
                 />
-              </picture>
-              <p class="sign">gemeos</p>
+              </figure>
+              <h3 class="sign">gemeos</h3>
               <p class="horoscope-description">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Consectetur ab dignissimos similique odio? Vero commodi ad
@@ -538,7 +566,7 @@
             </section>
             <section class="bolsa-mega">
               <div class="bolsa">
-                <h1>bolsa</h1>
+                <h3>bolsa</h3>
                 <div>
                   <p>dólar comercial <span class="bolsa-valor">R$5,53</span></p>
                   <p>dólar turismo <span class="bolsa-valor">R$5,53</span></p>
@@ -547,10 +575,10 @@
                 </div>
               </div>
               <div class="mega-sena">
-                <h1>mega sena n 1011</h1>
-                <picture>
+                <h3>mega sena n 1011</h3>
+                <figure>
                   <img src="./images/clover.svg" alt="mega-sena-icon" />
-                </picture>
+                </figure>
                 <div>
                   <p>01</p>
                   <p>05</p>
@@ -570,42 +598,48 @@
           <div class="main-second-section">
             <div class="topic-wrapper">
               <div class="topic">
-                <picture class="last-topic-picture">
+                <figure class="last-topic-picture">
                   <img src="./images/tie-3.jpg" alt="random image" />
-                </picture>
+                </figure>
                 <div class="topic-content">
-                  <p class="entertainment">entretenimento</p>
+                  <h3 class="entertainment">entretenimento</h3>
                   <p class="topic-title">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Illum expedita rerum velit temporibus?
                   </p>
-                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
+                  <span class="reading-time"
+                    >5 min. de leitura - há 15 horas</span
+                  >
                 </div>
               </div>
               <div class="topic">
-                <picture class="last-topic-picture">
+                <figure class="last-topic-picture">
                   <img src="./images/tie-3.jpg" alt="random image" />
-                </picture>
+                </figure>
                 <div class="topic-content">
-                  <p class="entertainment">entretenimento</p>
-                  <p class="topic-title">
+                  <h3 class="entertainment">entretenimento</h3>
+                  <span class="topic-title">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Illum expedita rerum velit temporibus?
-                  </p>
-                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
+                  </span>
+                  <span class="reading-time"
+                    >5 min. de leitura - há 15 horas</span
+                  >
                 </div>
               </div>
               <div class="topic">
-                <picture class="last-topic-picture">
+                <figure class="last-topic-picture">
                   <img src="./images/tie-3.jpg" alt="random image" />
-                </picture>
+                </figure>
                 <div class="topic-content">
-                  <p class="entertainment">entretenimento</p>
-                  <p class="topic-title">
+                  <h3 class="entertainment">entretenimento</h3>
+                  <span class="topic-title">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Illum expedita rerum velit temporibus?
-                  </p>
-                  <p class="reading-time">5 min. de leitura - há 15 horas</p>
+                  </span>
+                  <span class="reading-time"
+                    >5 min. de leitura - há 15 horas</span
+                  >
                 </div>
               </div>
             </div>
@@ -615,51 +649,51 @@
             <section class="other-topics-wrapper">
               <div class="small-topic">
                 <div class="small-topic-text">
-                  <p class="sports">esportes</p>
+                  <h3 class="sports">esportes</h3>
                   <p class="news-title">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Tempora et dolores quisquam?
                   </p>
                 </div>
-                <picture class="small-topic-figure">
+                <figure class="small-topic-figure">
                   <img src="./images/tie-2.jpg" alt="random image" />
-                </picture>
+                </figure>
               </div>
               <div class="small-topic">
                 <div class="small-topic-text">
-                  <p class="sports">esportes</p>
+                  <h3 class="sports">esportes</h3>
                   <p class="news-title">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Tempora et dolores quisquam?
                   </p>
                 </div>
-                <picture class="small-topic-figure">
+                <figure class="small-topic-figure">
                   <img src="./images/tie-2.jpg" alt="random image" />
-                </picture>
+                </figure>
               </div>
               <div class="small-topic">
                 <div class="small-topic-text">
-                  <p class="sports">esportes</p>
+                  <h3 class="sports">esportes</h3>
                   <p class="news-title">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Tempora et dolores quisquam?
                   </p>
                 </div>
-                <picture class="small-topic-figure">
+                <figure class="small-topic-figure">
                   <img src="./images/tie-2.jpg" alt="random image" />
-                </picture>
+                </figure>
               </div>
               <div class="small-topic">
                 <div class="small-topic-text">
-                  <p class="sports">esportes</p>
+                  <h3 class="sports">esportes</h3>
                   <p class="news-title">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Tempora et dolores quisquam?
                   </p>
                 </div>
-                <picture class="small-topic-figure">
+                <figure class="small-topic-figure">
                   <img src="./images/tie-2.jpg" alt="random image" />
-                </picture>
+                </figure>
               </div>
             </section>
           </aside>
@@ -669,9 +703,9 @@
     <footer>
       <section class="footer">
         <span> © Copyright 2020-2021 - Todos os direitos reservados S.A</span>
-        <picture>
+        <figure>
           <img src="./images/circle.svg" class="logo" alt="logo icon" />
-        </picture>
+        </figure>
         <a href="#">Política de privacidade</a>
         <a href="#">Imprensa</a>
       </section>

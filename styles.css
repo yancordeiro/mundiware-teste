@@ -126,6 +126,9 @@ body {
   font-family: sans-serif;
 }
 /* -----GENERAL----- */
+.header-mobile {
+  display: none;
+}
 .body-wrapper {
   padding: 2rem 20rem 0 20rem;
 }
@@ -288,6 +291,10 @@ input:not(:placeholder-shown) ~ .reset {
 }
 
 /* -----NAVBAR----- */
+
+.hamburger-menu {
+  visibility: hidden;
+}
 .categories {
   padding-top: 1rem;
   display: flex;
@@ -690,6 +697,7 @@ input:not(:placeholder-shown) ~ .reset {
 }
 
 .bolsa {
+  padding: 1rem;
   color: grey;
   background-color: #fff;
   border-radius: 1rem;
@@ -743,7 +751,7 @@ input:not(:placeholder-shown) ~ .reset {
   width: 50%;
 }
 
-.mega-sena h1 {
+.mega-sena h3 {
   color: grey;
   font-weight: bold;
   text-transform: uppercase;
@@ -791,7 +799,7 @@ input:not(:placeholder-shown) ~ .reset {
   height: 110px;
 }
 
-@media (max-width: 1664px) {
+@media (max-width: 1900px) {
   .user {
     display: flex;
     align-items: center;
@@ -823,7 +831,7 @@ input:not(:placeholder-shown) ~ .reset {
     grid-template-columns: 2fr 1fr;
   }
   .side-topics {
-    background-color: red;
+    margin-top: 5px;
   }
   .big-topic {
     width: 25rem;
@@ -833,7 +841,6 @@ input:not(:placeholder-shown) ~ .reset {
   }
 
   .music-topic-wrapper {
-    background-color: blue;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -843,6 +850,8 @@ input:not(:placeholder-shown) ~ .reset {
     border-radius: 1rem;
     width: 100%;
     height: 25rem;
+    object-fit: cover;
+    object-position: center;
   }
   .music-topic {
     display: flex;
@@ -880,5 +889,714 @@ input:not(:placeholder-shown) ~ .reset {
     border-radius: 1rem;
     width: 100%;
     height: 17rem;
+  }
+
+  /* -----VIDEOS----- */
+
+  .featured-video-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+
+  .featured-video {
+    width: 220px;
+    height: 400px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .video-length {
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 20px;
+    padding: 4px;
+    width: 60px;
+    border-radius: 1rem;
+    background-color: rgb(80, 80, 255);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .video-length-sports {
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 20px;
+    padding: 4px;
+    width: 60px;
+    border-radius: 1rem;
+    background-color: green;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .video-preview img {
+    object-fit: cover;
+    object-position: top;
+    width: 220px;
+    height: 200px;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(150, 127, 255);
+  }
+
+  .video-player {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(80, 80, 255);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-player-sports {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #icon-player {
+    width: 24px;
+    height: 24px;
+  }
+  .video-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    width: inherit;
+    height: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .video-description p {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: rgb(80, 80, 255);
+  }
+  .video-description h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: grey;
+  }
+}
+@media (max-width: 1575px) {
+  .first-section img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .horizontal-card {
+    max-width: 20rem;
+  }
+  .horizontal-card img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+  }
+
+  /* music topic */
+  .second-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .side-topics {
+    margin-top: 5px;
+  }
+  .big-topic {
+    width: 20rem;
+  }
+  .small-topic {
+    width: 18rem;
+    height: 150px;
+  }
+  .other-topics-wrapper {
+    grid-row-gap: 0.5rem;
+  }
+
+  .music-topic-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.5rem;
+  }
+  .music-topic img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .music-topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: 25rem;
+  }
+
+  .music-topic-text {
+    position: absolute;
+    color: white;
+    padding: 1rem;
+  }
+  .music {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0rem 0rem 1rem 0rem;
+  }
+  .music-topic-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .topic {
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    align-items: flex-start;
+    height: 150px;
+  }
+  .big-topic img {
+    object-fit: cover;
+    border-radius: 1rem;
+    width: 100%;
+    height: 17rem;
+  }
+  .featured-video-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    max-height: 350px;
+  }
+
+  .featured-video {
+    width: 175px;
+    height: 400px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .video-length {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 4px;
+    width: 60px;
+    border-radius: 1rem;
+    background-color: rgb(80, 80, 255);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .video-length-sports {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 4px;
+    width: 60px;
+    border-radius: 1rem;
+    background-color: green;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .video-preview img {
+    object-fit: cover;
+    object-position: top;
+    width: 175px;
+    height: 150px;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(150, 127, 255);
+  }
+
+  .video-player {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(80, 80, 255);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-player-sports {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #icon-player {
+    width: 24px;
+    height: 24px;
+  }
+  .video-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    width: inherit;
+    height: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .video-description p {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: rgb(80, 80, 255);
+  }
+  .video-description h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: grey;
+  }
+
+  .bolsa div {
+    padding: 1rem;
+    align-items: flex-start;
+    font-size: 11px;
+  }
+  .bolsa h3 {
+    font-size: 12px;
+    color: grey;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+  .mega-sena h3 {
+    font-size: 12px;
+  }
+  .mega-sena p {
+    padding: 0.3rem;
+    font-size: 10px;
+    color: grey;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+  }
+  .last-topic-navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .body-wrapper {
+    padding: 2rem 2rem 0 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .body-wrapper {
+    padding: 2rem 1rem 0 1rem;
+  }
+  .menu,
+  .form,
+  .logo,
+  .clima,
+  .iconn,
+  .user,
+  #divider-header,
+  .categories,
+  .notification-icon {
+    display: none;
+  }
+  .hamburger-menu {
+    visibility: visible;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #616161;
+
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+
+    width: 300px;
+    height: 100%;
+
+    margin: 0;
+    padding: 80px 0;
+
+    list-style: none;
+
+    background-color: #eceff1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+
+    transition-duration: 0.25s;
+  }
+
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+
+    color: #333;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition-duration: 0.25s;
+  }
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .first-section img {
+    width: 18rem;
+  }
+
+  .horizontal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .horizontal-card img {
+    min-width: 18rem;
+  }
+
+  .second-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .topic-wrapper {
+    height: 100%;
+  }
+  .music-topic-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 22.5rem;
+  }
+  .music-topic {
+    margin-top: 1rem;
+  }
+  .other-topics-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .big-topic {
+    width: 22.5rem;
+  }
+  .small-topic {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    width: 20.5rem;
+  }
+  .small-topic figure,
+  .small-topic-figure {
+    width: 100%;
+    margin: auto;
+  }
+  .featured-video-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+  }
+  .featured-video {
+    height: 100%;
+  }
+
+  .horoscope-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .horoscope {
+    margin-top: 1rem;
+  }
+  .bolsa-mega {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .topic {
+    height: 100%;
+  }
+  .topic img {
+    height: 13rem;
+  }
+  .last-topic {
+    margin-top: 2rem;
+  }
+  .last-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .other-topics-wrapper {
+    margin-top: 3rem;
+  }
+  .bolsa-mega {
+    display: flex;
+    flex-direction: column;
+  }
+  .bolsa {
+    width: 100%;
+  }
+  .mega-sena {
+    width: 100%;
+  }
+
+  .featured-video {
+    width: 350px;
+    height: 400px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .video-length {
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 20px;
+    padding: 4px;
+    width: 60px;
+    border-radius: 1rem;
+    background-color: rgb(80, 80, 255);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .video-length-sports {
+    position: absolute;
+    margin-left: 260px;
+    margin-top: 20px;
+    padding: 4px;
+    width: 60px;
+    border-radius: 1rem;
+    background-color: green;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .video-preview img {
+    object-fit: cover;
+    object-position: top;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(150, 127, 255);
+  }
+
+  .video-player {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(80, 80, 255);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-player-sports {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #icon-player {
+    width: 24px;
+    height: 24px;
+  }
+  .video-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    width: inherit;
+    height: 150px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .video-description p {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: rgb(80, 80, 255);
+  }
+  .video-description h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: grey;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .footer a,
+  .footer span {
+    margin-top: 1rem;
+  }
+  .footer figure {
+    display: none;
   }
 }
