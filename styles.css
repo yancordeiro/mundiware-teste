@@ -424,14 +424,14 @@ input:not(:placeholder-shown) ~ .reset {
   border-radius: 0 0 1rem 1rem;
   height: 130px;
 }
-.last-topic-content p {
+.last-topic-content h3 {
   color: #fff;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
   margin: 1rem;
 }
-.last-topic-content h1 {
+.last-topic-content p {
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -461,7 +461,7 @@ input:not(:placeholder-shown) ~ .reset {
 .music-topic img {
   border-radius: 1rem;
   width: 18rem;
-  height: 25rem;
+  height: 24.7rem;
 }
 .music-topic {
   display: flex;
@@ -627,7 +627,7 @@ input:not(:placeholder-shown) ~ .reset {
   border-bottom-right-radius: 10px;
 }
 
-.video-description p {
+.video-description h3 {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
@@ -635,7 +635,7 @@ input:not(:placeholder-shown) ~ .reset {
   margin-left: 1.5rem;
   color: rgb(80, 80, 255);
 }
-.video-description h1 {
+.video-description span {
   font-size: 16px;
   font-weight: bold;
   margin-top: 1rem;
@@ -989,7 +989,7 @@ input:not(:placeholder-shown) ~ .reset {
     border-bottom-right-radius: 10px;
   }
 
-  .video-description p {
+  .video-description h3 {
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -997,7 +997,7 @@ input:not(:placeholder-shown) ~ .reset {
     margin-left: 1.5rem;
     color: rgb(80, 80, 255);
   }
-  .video-description h1 {
+  .video-description span {
     font-size: 16px;
     font-weight: bold;
     margin-top: 1rem;
@@ -1146,9 +1146,9 @@ input:not(:placeholder-shown) ~ .reset {
   .video-player {
     position: absolute;
     margin-top: 125px;
-    margin-left: 30px;
-    width: 50px;
-    height: 50px;
+    margin-left: 1.5rem;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: rgb(80, 80, 255);
     display: flex;
@@ -1160,9 +1160,9 @@ input:not(:placeholder-shown) ~ .reset {
   .video-player-sports {
     position: absolute;
     margin-top: 125px;
-    margin-left: 30px;
-    width: 50px;
-    height: 50px;
+    margin-left: 1.5rem;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: green;
     display: flex;
@@ -1171,8 +1171,8 @@ input:not(:placeholder-shown) ~ .reset {
     align-items: center;
   }
   #icon-player {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
   }
   .video-description {
     display: flex;
@@ -1186,7 +1186,7 @@ input:not(:placeholder-shown) ~ .reset {
     border-bottom-right-radius: 10px;
   }
 
-  .video-description p {
+  .video-description h3 {
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -1194,11 +1194,10 @@ input:not(:placeholder-shown) ~ .reset {
     margin-left: 1.5rem;
     color: rgb(80, 80, 255);
   }
-  .video-description h1 {
+  .video-description span {
     font-size: 16px;
     font-weight: bold;
-    margin-top: 1rem;
-    margin-left: 1.5rem;
+    margin: 1rem 0 1rem 1.5rem;
     color: grey;
   }
 
@@ -1224,6 +1223,13 @@ input:not(:placeholder-shown) ~ .reset {
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 1rem;
+  }
+  .mega-sena div {
+    gap: 1rem;
+  }
+  .last-topic {
+    min-height: 400px;
+    height: 100%;
   }
 
   .categories {
