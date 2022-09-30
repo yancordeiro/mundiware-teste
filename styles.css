@@ -1197,7 +1197,7 @@ input:not(:placeholder-shown) ~ .reset {
   .video-description span {
     font-size: 16px;
     font-weight: bold;
-    margin: 1rem 0 1rem 1.5rem;
+    margin: 1rem 0.5rem 1rem 1.5rem;
     color: grey;
   }
 
